@@ -1,0 +1,16 @@
+.footer {
+  background-color: whitesmoke;
+  color: black;
+  padding: 1em;
+}
+
+.footerHead {
+  padding: 1em 0;
+}
+
+.copyright {
+  text-align: center;
+  background-color: rgb(178, 190, 200);
+  padding: 1em;
+  margin-top: 1rem;
+}

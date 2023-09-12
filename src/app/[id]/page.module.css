@@ -3,3 +3,8 @@
     min-height: 90vh;
     padding: 2rem;
 }
+
+.img {
+    /* width: 70%; */
+    object-fit: cover;
+}

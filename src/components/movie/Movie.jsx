@@ -1,22 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./page.module.css";
 
-function movie(props) {
-  const imagePath = "https://image/tmdb.org/t/p/original";
-  //   console.log(props.poster_path);
-  return (  
-    <div key={props.id}>
-      <h4>{props.title}</h4>
-      <p>{props.release_date}</p>
-      <Link href={`akjs`}>
+function movie({ poster_path, key, id, title, release_date, vote }) {
+  const imagePath = "https://image.tmdb.org/t/p/w400";
+  return (
+    <div key={key}>
+      <Link href={`/${id}`}>
         <Image
+          className={styles.img}
           unoptimized
-          src={imagePath + props.poster_path}
-          width={400}
+          src={imagePath + poster_path}
+          width={300}
           height={200}
-          alt={props.title}
+          alt={title}
         />
       </Link>
+      <h6>{title}</h6>
+      <p>{release_date}</p>
+      <p>Rating: {vote}</p>
     </div>
   );
 }

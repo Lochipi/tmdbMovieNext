@@ -14,27 +14,23 @@ async function getData() {
 
 export default async function Page() {
   const data = await getData();
-  console.log(data.results);
 
   return (
     <div className={styles.main}>
-      {data.results.map((movie) => (
-        <>
-          <Movie
-            id={movie.id}
-            key={movie.id}
-            title={movie.title}
-            poster_path={movie.poster_path}
-            release_date={movie.release_date}
-          />
-        </>
-      ))}
-      <h3>This is the main home page</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta iure eos
-        sed molestiae dolorum cupiditate reiciendis sapiente amet reprehenderit
-        ducimus.
-      </p>
+      <div className={styles.flex}>
+        {data.results.map((movie) => (
+          <>
+            <Movie
+              id={movie.id}
+              key={movie.id}
+              title={movie.title}
+              poster_path={movie.poster_path}
+              release_date={movie.release_date}
+              vote = {movie.vote_average}
+            />
+          </>
+        ))}
+      </div>
     </div>
   );
 }

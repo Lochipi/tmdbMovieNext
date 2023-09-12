@@ -1,13 +1,23 @@
 .main {
   background-color: rgb(193, 191, 191);
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding: 2rem 0 2rem 3rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
-  padding: 6rem;
+  width: 100%;
   min-height: 90vh;
+  color: black;
 }
 
-.movieContainer {
-  color: #fff;
+.title {
+  margin-bottom: 1rem;
+  color: purple;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }

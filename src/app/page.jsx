@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Movie from "../components/movie/Movie";
+import SearchBar from "@/components/searchbar/Search";
 
 async function getData() {
   const res = await fetch(
@@ -17,6 +18,9 @@ export default async function Page() {
 
   return (
     <div className={styles.main}>
+      <div>
+        <SearchBar />
+      </div>
       <div className={styles.flex}>
         {data.results.map((movie) => (
           <>
@@ -26,7 +30,7 @@ export default async function Page() {
               title={movie.title}
               poster_path={movie.poster_path}
               release_date={movie.release_date}
-              vote = {movie.vote_average}
+              vote={movie.vote_average}
             />
           </>
         ))}

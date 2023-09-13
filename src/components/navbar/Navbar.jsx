@@ -9,13 +9,10 @@ function Navbar() {
       </h3>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <Link href="/home">Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/prices">Prices</Link>
+          <Link href="/">About</Link>
         </li>
       </ul>
     </div>

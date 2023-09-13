@@ -13,10 +13,10 @@ export default async function MovieDetail({ params }) {
 
   return (
     <div className={styles.container}>
-      <h2>{res.title}</h2>
-      <h2>{res.release_date}</h2>
-      <h2>Runtime: {res.runtime}</h2>
-      <p>{res.status}</p>
+      <h2 className={styles.title}>{res.title}</h2>
+      <p className={styles.releasedate}>Released On: {res.release_date}</p>
+      <p className={styles.runtime}>Runtime: {res.runtime} Min</p>
+      <p className={styles.status}>Status: {res.status}</p>
       <Image
         className={styles.img}
         unoptimized
@@ -26,7 +26,7 @@ export default async function MovieDetail({ params }) {
         alt={res.title}
         priority
       />
-      <p>{res.overview}</p>
+      <p className={styles.review}>{res.overview}</p>
     </div>
   );
 }

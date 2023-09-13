@@ -1,10 +1,24 @@
 .container {
-    width: 100%;
-    min-height: 90vh;
-    padding: 2rem;
+  width: 100%;
+  min-height: 90vh;
+  padding: 2rem;
+  background-color: aliceblue;
+  /* color: RGB(93, 124, 250); */
+}
+
+.title {
+  color: RGB(93, 124, 250);
+}
+.status,
+.runtime,
+.releasedate {
+  color: gray;
+}
+.review {
+  color: rgb(70, 49, 70);
 }
 
 .img {
-    /* width: 70%; */
-    object-fit: cover;
+  /* width: 70%; */
+  object-fit: cover;
 }

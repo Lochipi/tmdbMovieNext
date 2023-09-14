@@ -2,23 +2,30 @@
   width: 100%;
   min-height: 90vh;
   padding: 2rem;
-  background-color: aliceblue;
-  /* color: RGB(93, 124, 250); */
+  background-color: rgb(95, 98, 101);
 }
 
 .title {
   color: RGB(93, 124, 250);
+  margin-bottom: 1rem;
 }
 .status,
 .runtime,
 .releasedate {
-  color: gray;
+  color: whitesmoke;
 }
-.review {
-  color: rgb(70, 49, 70);
+
+.desc,
+.reviewdesc {
+  color: RGB(15, 156, 206);
+}
+.overview {
+  width: 70%;
 }
 
 .img {
   /* width: 70%; */
+  background-position: center;
   object-fit: cover;
+  margin: 1rem 0;
 }

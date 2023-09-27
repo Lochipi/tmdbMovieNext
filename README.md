@@ -1,8 +1,8 @@
-# Movie App 
+# Movie App 🐱‍🚀
 Movie app built with Nextjs Framework. Users can be able to search for their favorite movies.
 
 
-## Getting Started
+## Getting Started 🔗
 
 First, run the development server:
 
